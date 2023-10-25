@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    background-color: rgb(78, 78, 78);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 30px;
+    width: 70vh;
+    text-shadow: 0px 2px 5px black;
+    color: white;
+}
+.container{
+    width: 70vh;
+    height: 70vh;
+}
+.gridContainer {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: gray;
+    padding: 10px;
+    box-shadow: 0px 10px 20px 1px black;
+}
+.row {
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+}
+
+.cell {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(201, 201, 201);
+    
+}
+.cell:hover {
+    cursor: crosshair;
+}
+.operators {
+    display: flex;
+    flex-shrink: 1 1 auto;
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 1px black;
+    justify-content: space-between;
+    color: rgb(0, 123, 255);
+    align-items: center;
+}
+
+.opBtn {
+    width: 25%;
+    text-align: center;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.opBtn:hover{
+    cursor: pointer;
+}
+
+#sizeBtn {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+#size {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 4px;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+.opBtn > img {
+    width: 25%;
+    height:auto;
+}
